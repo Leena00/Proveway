@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Expanding Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="product-container">
+    <div class="box" id="box1" onclick="toggleBox('box1')">
+        <div class="option-content">
+          <div class="unit-info">
+            <input type="radio" name="product" />
+            <span>1 Unit</span>
+            <span class="discount-badge">10% Off</span>
+          </div>
+          <div class="price-info">
+            <span class="price">$10.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </div>
+
+          <!-- Size and color -->
+        <div class="size-color-container">
+          <div class="selection-label">
+            <span>Color</span>
+            <span>Size</span>
+          </div>
+          <div class="size-color">
+            <label>#1</label>
+            <select>
+              <option>Red</option>
+              <option>Green</option>
+              <option>Blue</option>
+            </select>
+            <select>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </div>
+          <div class="size-color">
+            <label>#2</label>
+            <select>
+              <option>Red</option>
+              <option>Green</option>
+              <option>Blue</option>
+            </select>
+            <select>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="box" id="box2" onclick="toggleBox('box2')">
+      <div class="option-content">
+        <div class="unit-info">
+          <input type="radio" name="product" />
+          <span>2 Unit</span>
+          <span class="discount-badge">20% Off</span>
+        </div>
+        <div class="price-info">
+          <span class="price">$18.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+
+        <!-- Size and color -->
+      <div class="size-color-container">
+        <div class="selection-label">
+          <span>Color</span>
+          <span>Size</span>
+        </div>
+        <div class="size-color">
+          <label>#1</label>
+          <select>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+          </select>
+          <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+        <div class="size-color">
+          <label>#2</label>
+          <select>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+          </select>
+          <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="box" id="box3" onclick="toggleBox('box3')">
+      <div class="option-content">
+        <div class="unit-info">
+          <input type="radio" name="product" />
+          <span>3 Unit</span>
+          <span class="discount-badge">30% Off</span>
+        </div>
+        <div class="price-info">
+          <span class="price">$24.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+
+        <!-- Size and color -->
+      <div class="size-color-container">
+        <div class="selection-label">
+          <span>Color</span>
+          <span>Size</span>
+        </div>
+        <div class="size-color">
+          <label>#1</label>
+          <select>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+          </select>
+          <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+        <div class="size-color">
+          <label>#2</label>
+          <select>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+          </select>
+          <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Summary and Add to Cart -->
+    <div class="summary">
+      <span class="free-delivery">Free Delivery</span>
+      <span class="total-price">Total: $18.00 USD</span>
+    </div>
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<script>
+function toggleBox(id) {
+  const box = document.getElementById(id);
+  box.classList.toggle("expanded");
+}
+</script>
